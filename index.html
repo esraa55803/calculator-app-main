@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style4.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frontend Mentor | Calculator app</title>
+    </head>
+    
+    <body>
+       <div class="mainC">
+       <div class="tittle">
+           <div class="tog">
+            <h1>calc</h1>
+            <div class="right">
+                <span id="one">1</span>
+                <span id="two">2</span>
+                <span id="thr">3</span>
+            </div>
+           </div>
+           <div class="control">
+            <h5>THEME</h5>
+            <div class="box">
+                <div id="cir"></div>
+            </div>
+           </div>
+       </div>
+
+       <div class="screen">
+           <form name="clac">
+            <input type="text" readonly
+             id="screen" name="tex"
+             value="0">
+           </form>
+       </div>
+       
+       <div class="cal-body">
+        <div class="btn">
+            <button class="num" 
+            onclick="document.clac.tex.value +='7'">7
+            </button>
+            <button class="num"
+            onclick="document.clac.tex.value +='8'">8
+            </button>
+            <button class="num"
+            onclick="document.clac.tex.value +='9'">9
+            </button>
+            <button class="del" onclick="del()">DEL</button>
+            <button class="num"
+            onclick="document.clac.tex.value +='4'">4
+            </button>
+            <button class="num"
+            onclick="document.clac.tex.value +='5'">5
+            </button>
+            <button class="num"
+            onclick="document.clac.tex.value +='6'">6
+            </button>
+            <button  onclick="document.clac.tex.value += 
+            '+'">+</button>
+            <button class="num"
+            onclick="document.clac.tex.value +='1'">1
+            </button>
+            <button class="num"
+            onclick="document.clac.tex.value +='2'">2
+            </button>
+            <button class="num"
+            onclick="document.clac.tex.value +='3'">3
+            </button>
+            <button  onclick="document.clac.tex.value +='-'">-
+            </button>
+            <button  onclick="document.clac.tex.value +='.'">.
+            </button>
+            <button class="num"
+            onclick="document.clac.tex.value +='0'">0
+            </button>
+            <button  onclick="document.clac.tex.value +='/'">/
+            </button>
+            <button  onclick="document.clac.tex.value +='*'">X
+            </button>
+            <button id="reset" 
+             onclick="document.clac.tex.value =''">RESET
+            </button>
+            <button id="equal"  
+            onclick="document.clac.tex.value = 
+                     eval(clac.tex.value)">=</button>
+        </div>
+       </div>
+       <div class="attribution">
+        <div>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.</div>
+        <div>Coded by <a href="mailto:davidrhyne@att.net">David Rhyne</a>.</div>
+      </div>
+       </div>
+
+       <script src="script4.js"></script>
+    </body>
+</html>
